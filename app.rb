@@ -10,11 +10,7 @@ EVENT_DATE = "2024-04-27"
 TICKET_PRICE = 10
 
 get("/") do
-  erb :welcome
-end
 
-get("/purchase") do
-  erb :purchase
 end
 
 post("/purchase") do
