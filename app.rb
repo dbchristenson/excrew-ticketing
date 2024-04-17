@@ -1,9 +1,15 @@
 require "sinatra"
+require "sinatra/activerecord"
 require "sinatra/reloader"
 
+set :database, { adapter: "sqlite3", database: "db/development.sqlite3" }
+
+require "./models/purchase"
+
 get("/") do
-  "
-  <h1>Welcome to your Sinatra App!</h1>
-  <p>Define some routes in app.rb</p>
-  "
+  erb :welcome
+end
+
+get("/buy") do
+  erb :buy
 end
