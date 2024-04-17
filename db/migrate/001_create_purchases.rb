@@ -1,6 +1,6 @@
-class CreatePurchase < ActiveRecord::Migration[6.0]
+class CreatePurchases < ActiveRecord::Migration[6.0]
   def change
-    create_table :purchases do |t|
+    create_table :purchase do |t|
       t.string :first
       t.string :last
       t.string :email
