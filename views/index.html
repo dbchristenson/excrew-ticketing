@@ -12,10 +12,14 @@
       overflow: hidden;
     }
 
-    .header-container {
+    .header-img {
       position: flex;
       justify-self: center;
       z-index: 2;
+      order: -1;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      max-width: 80vw;
     }
 
     .sub-container {
@@ -24,14 +28,15 @@
       justify-self: center;
       align-content: flex-start;
       order: -1;
-      margin-top: 10rem;
       z-index: 2;
+      margin-bottom: 20rem;
     }
 
     .sub-text {
       font-family: system-ui, sans-serif;
       font-size: 24px;
       color: white;
+      max-width: 60vw;
     }
 
     .background {
@@ -78,6 +83,7 @@
       margin: auto;
       padding: 0px;
       z-index: 2;
+      margin-bottom: 20%;
     }
   </style>
 </head>
@@ -85,7 +91,7 @@
 <body>
   <div class="background">
     <div class="frost"></div>
-    <div class="header-container"></div>
+    <img src="https://i.imgur.com/8FMYyGy.png" alt="" id="header-img" class="header-img">
     <div class="sub-container">
       <h3 class="sub-text"> PRESENTED BY EX CREW AND GROOVE THEORY </h3>
     </div>
