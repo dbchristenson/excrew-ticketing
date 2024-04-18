@@ -12,24 +12,24 @@
       overflow: hidden;
     }
 
-    .header-img {
-      position: flex;
-      justify-self: center;
-      z-index: 2;
-      order: -1;
-      padding-bottom: 0px;
-      margin-bottom: 0px;
+    .parent-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       max-width: 80vw;
     }
 
+    .header-img {
+      z-index: 2;
+      order: -1;
+      padding-bottom: 0px;
+      max-width: 100%;
+    }
+
     .sub-container {
-      position: flex;
-      flex-direction: column;
-      justify-self: center;
-      align-content: flex-start;
       order: -1;
       z-index: 2;
-      margin-bottom: 20rem;
+      padding-left: 10px;
     }
 
     .sub-text {
@@ -37,6 +37,13 @@
       font-size: 24px;
       color: white;
       max-width: 60vw;
+    }
+
+    @media (max-width: 600px) { /* Adjusts styles for screens up to 600px wide */
+        .sub-text {
+            font-size: 16px; /* Smaller font size for narrow screens */
+            padding: 5px;
+        }
     }
 
     .background {
@@ -77,13 +84,13 @@
     }
 
     .purchase {
-      position: flex;
+      position: relative;
       justify-content: center;
       align-items: center;
       margin: auto;
       padding: 0px;
       z-index: 2;
-      margin-bottom: 20%;
+      bottom: 40%;
     }
   </style>
 </head>
@@ -91,9 +98,11 @@
 <body>
   <div class="background">
     <div class="frost"></div>
-    <img src="https://i.imgur.com/8FMYyGy.png" alt="" id="header-img" class="header-img">
-    <div class="sub-container">
-      <h3 class="sub-text"> PRESENTED BY EX CREW AND GROOVE THEORY </h3>
+    <div class="parent-container">
+      <img src="https://i.imgur.com/8FMYyGy.png" alt="" id="header-img" class="header-img">
+      <div class="sub-container">
+        <h3 class="sub-text"> PRESENTED BY EX CREW AND GROOVE THEORY </h3>
+      </div>
     </div>
     <div id='product-component-1713391700350' class="purchase">
       <script type="text/javascript">
