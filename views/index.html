@@ -39,20 +39,8 @@
       max-width: 60vw;
     }
 
-    @media (max-width: 600px) { /* Adjusts styles for screens up to 600px wide */
-        .sub-text {
-            font-size: 16px; /* Smaller font size for narrow screens */
-            padding: 5px;
-            max-width: 80vw;
-        }
-        .parent-container {
-          max-width: 100vw;
-        }
-    }
-
     .background {
-      background: url('https://i.imgur.com/0QLKiCz.jpeg');
-      background-attachment: fixed;
+      background: url('https://i.imgur.com/0QLKiCz.jpeg') no-repeat center center fixed;
       background-size: cover;
       display: grid;
       align-items: center;
@@ -60,6 +48,22 @@
       height: 100vh;
       width: 100%;
       box-sizing: border-box;
+    }
+    
+    @media (max-width: 600px) { /* Adjusts styles for screens up to 600px wide */
+        .sub-text {
+            font-size: 14px; /* Smaller font size for narrow screens */
+            padding: 5px;
+            max-width: 90vw;
+        }
+
+        .parent-container {
+          max-width: 100vw;
+        }
+
+        .background {
+          background-attachment: scroll;
+        }
     }
 
     .frost {
