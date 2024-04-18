@@ -1,0 +1,27 @@
+.header-container {
+  position: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background {
+  height: 100vh; /* Full height of the viewport */
+  width: 100%; /* Full width */
+  background-image: url('/views/resources/bg.jpeg'); /* Path to your background image */
+  background-size: cover; /* Cover the entire area of the element */
+  background-position: center; /* Center the background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frosted-glass {
+  backdrop-filter: blur(10px); /* Adjust blur level to control the effect */
+  background: rgba(255, 255, 255, 0.5); /* White background with opacity for the frost effect */
+  padding: 20px; /* Spacing around the content */
+  border-radius: 10px; /* Optional: rounded corners */
+  width: 80%; /* Width of the frosted area */
+  max-width: 600px; /* Maximum width */
+  text-align: center; /* Centering text */
+}
